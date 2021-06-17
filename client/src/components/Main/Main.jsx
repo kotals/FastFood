@@ -50,8 +50,8 @@ const Main = () => {
           {categories?.map(el => <span className={style.nav_link} key={el._id}><a href={`#${el.name}`}  > {el.name}</a> </span>)}
         </nav>
 
-        <div style={{ margin: '40px 0' }}>
-          {categories?.map(el => <Category key={el._id} info={el} />)}
+        <div className={style.container_category}>
+          {categories?.map((el,index) => <Category i={index+1} key={el._id} info={el} />)}
         </div>
       </div>
 
