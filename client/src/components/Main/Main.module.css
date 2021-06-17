@@ -49,6 +49,7 @@ input[type=text]{
   display: flex;
   justify-content: center;
  position: sticky;
+ z-index: 99;
   top: 0;
   align-items: center;
   height: 64px;
@@ -75,20 +76,28 @@ input[type=text]{
 
 }
 
-
 .nav_link > a{
-  
   color: #9D9D9D;
 }
 
-
-.nav_link:target{
-  background-color: #E4002B;
-  color: #E4002B;
-}
-
 :target{
- 
+  display: block;
+	content: "";
+	height: 55px;
+	margin: -55px 0 0;
   transition-duration: .8s;
 }
+/* #link-B:before {
+	display: block;
+	content: "";
+	height: 55px;
+	margin: -55px 0 0;
+} */
 
+
+
+
+.container_category{
+  max-width: 100%;
+  margin: 0 auto;
+}

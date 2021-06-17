@@ -1,30 +1,29 @@
 import React from 'react'
-
+import style from './Good.module.css'
 const Good = ({ info }) => {
 
+  
 
 
   return (
     <>
 
-      <div style={{ margin: '20px', width: '300px', height: '200px', backgroundColor: 'coral' }}>
-        <div>
-          название: {info.name}
+      <div className={style.good}>
+        <div style={{position:'relative'}}>
+        <div >
+          <img className={style.img_item} height='151px' width='192px' src="https://s82079.cdn.ngenix.net/330x0/YQFxnHqxG8uJzocESMTikaio.png" alt="бургер" />
+        </div>
+        <div className={style.iconBuy} ><span>+</span></div>
+
+        </div>
+        
+        <div style={{margin:'30px 0 10px 0'}}>
+        {info.name}
         </div>
         <div>
-          цена: {info.price}
+          {info.price}  &#8381;
         </div>
-        <div>
-         
-          {
-            info.delivery
-              ?
-              <span> Доставка</span>
-              :
-              <span> Только самовывоз</span>
-          }
-        </div>
-        <hr />
+       
       </div>
 
     </>
