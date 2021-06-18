@@ -46,6 +46,7 @@ input[type=text]{
 }
 
 .nav{
+  margin: 0 96px;
   display: flex;
   justify-content: center;
  position: sticky;
@@ -81,18 +82,9 @@ input[type=text]{
 }
 
 :target{
-  display: block;
-	content: "";
-	height: 55px;
-	margin: -55px 0 0;
-  transition-duration: .8s;
+  transition-duration: .7s;
 }
-/* #link-B:before {
-	display: block;
-	content: "";
-	height: 55px;
-	margin: -55px 0 0;
-} */
+
 
 
 
