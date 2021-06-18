@@ -11,7 +11,7 @@ const Good = ({ info }) => {
       <div className={style.good}>
         <div style={{position:'relative'}}>
         <div >
-          <img className={style.img_item} height='151px' width='192px' src="https://s82079.cdn.ngenix.net/330x0/YQFxnHqxG8uJzocESMTikaio.png" alt="бургер" />
+          <img className={style.img_item} height='151px' width='192px' src={info.image} alt="бургер" />
         </div>
         <div className={style.iconBuy} ><span>+</span></div>
 

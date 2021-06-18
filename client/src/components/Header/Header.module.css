@@ -1,5 +1,10 @@
 
+.container{
+  margin: 0 96px;
+}
+
 .header{
+  margin-top: 32px;
   height: 88px;
   display: flex;
   justify-content: space-between;
