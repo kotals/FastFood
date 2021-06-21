@@ -8,9 +8,14 @@ const Header = () => {
   return (
     <>
       <div className={style.container}>
+        <div className={style.header_logo}>
+          <div className={style.header_logo_item}></div>
+          <div className={style.header_logo_item}></div>
+          <div className={style.header_logo_item}></div>
+        </div>
         <div className={style.header} >
           <div className={style.burger_menu}>
-            <img height='40px'  src={menu} alt="menu" />
+            <img height='40px' src={menu} alt="menu" />
           </div>
           <div className={style.cart}>
             <img height='40px' src={cart} alt="cart" />

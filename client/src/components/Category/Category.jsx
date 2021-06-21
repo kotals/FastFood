@@ -1,6 +1,7 @@
 import React from 'react'
 import GoodsList from '../GoodsList/GoodsList';
 const Category = ({ info, i }) => {
+  
   return (
     <>
       <div style={{ margin: '30px 0'}} >
