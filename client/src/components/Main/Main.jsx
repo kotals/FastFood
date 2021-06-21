@@ -27,8 +27,8 @@ const Main = () => {
 
   return (
     <>
-      <div style={{margin:'0 96px'}}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '47px',marginTop: '110px' }}>
+      <div className={style.container_main}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '47px', marginTop: '110px' }}>
           <div className={style.cityDelivery} >Доставка г.Москва</div>
           <div >
             <button className={style.button_red} onClick={changeFlagFalse}>Доставка</button>
@@ -36,7 +36,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div style={{ visibility: (flag ? 'hidden' : 'visible'),paddingBottom:'63px' }}>
+        <div style={{ visibility: (flag ? 'hidden' : 'visible'), paddingBottom: '63px' }}>
           <form>
             <span className={style.address}>Улица</span>
             <input type="text" class="form-control" />
@@ -46,14 +46,13 @@ const Main = () => {
         </div>
       </div>
 
-        <nav className={style.nav} >
-          {categories?.map(el => <span className={style.nav_link} key={el._id}><a href={`#${el.name}`}  > {el.name}</a> </span>)}
-        </nav>
+      <nav className={style.nav} >
+        {categories?.map(el => <span className={style.nav_link} key={el._id}><a href={`#${el.name}`}  > {el.name}</a> </span>)}
+      </nav>
 
-        <div className={style.container_category}>
-          {categories?.map((el,index) => <Category i={index+1} key={el._id} info={el} />)}
-        </div>
-
+      <div className={style.container_category}>
+        {categories?.map((el, index) => <Category i={index + 1} key={el._id} info={el} />)}
+      </div>
     </>
   )
 }

@@ -12,4 +12,14 @@
   
 }
 
+.header_logo{
+  display: flex;
+  justify-content: center;
+}
 
+.header_logo_item{
+  height: 17px;
+ margin: 0 7px;
+  width: 14px;
+  background-color: #E4002B;
+}
